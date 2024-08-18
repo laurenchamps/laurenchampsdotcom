@@ -10,6 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource/dm-serif-display": "^5.0.20",
+    "@fontsource/lato": "^5.0.21",
     "astro": "^4.14.2"
   }
 }
