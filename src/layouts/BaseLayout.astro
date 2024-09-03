@@ -16,15 +16,16 @@ const { pageTitle } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 	</head>
-	<body>
-		<Header />
-		<h1><span class="accent">{pageTitle}</span> is a web developer based in Adelaide, Australia.</h1>
+	<body class="bg">
 		<slot />
-		<Footer />
+		<!-- <Header />
+		<h1><span class="accent">{pageTitle}</span> is a web developer and virtual assitant based in Adelaide, Australia.</h1>
+		<slot />
+		<Footer /> -->
 	</body>
 </html>
 
-<style>
+<!-- <style>
 	h1 {
 		text-align: center;
 		color: var(--color-text-dk-primary);
@@ -33,4 +34,4 @@ const { pageTitle } = Astro.props;
 	.accent {
 		color: var(--color-accent-dk);
 	}
-</style>
+</style> -->

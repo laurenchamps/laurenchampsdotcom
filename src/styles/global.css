@@ -93,16 +93,14 @@ textarea:not([rows]) {
   /* CUSTOM COLOURS */
   --color-text-dk-primary: #464d4a;
   --color-text-dk-secondary: #4d5d56;
-  --color-text-lt-primary: #f4f3f0;
+  --color-text-lt-primary: #fafcfa;
 
-  --color-bg-lt-taupe: #f4f3f0;
-  --color-bg-mid-taupe: #ede7de;
+  --color-bg-lt-taupe: #fafcfa;
   --color-bg-lt-green: #d9e4da;
-  --color-bg-mid-green: #b9c7ba;
   --color-bg-dk-green: #4d5d56;
 
-  --color-accent-lt: #faa796;
-  --color-accent-dk: #bd324b;
+  --color-accent-lt: #ffb2a8;
+  --color-accent-dk: #ab4538;
 
   /* FONTS */
   --font-serif: 'DM Serif Display', serif;
@@ -113,6 +111,7 @@ textarea:not([rows]) {
 body {
   font-family: var(--font-sans);
   font-size: 16px;
+  color: var(--color-text-dk-primary);
 }
 
 h1,
@@ -122,6 +121,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-serif);
+  font-weight: 400;
 }
 
 h1 {
@@ -154,4 +154,32 @@ p {
 
 .small {
   font-size: 0.833rem;
+}
+
+/* Styles for coming soon page */
+
+.bg {
+  background-color: var(--color-bg-lt-taupe);
+  padding: 0;
+  margin: 0;
+}
+
+.coming-soon {
+  margin-inline-start: 4rem;
+  margin-inline-end: 4rem;
+  margin-top: 3rem;
+}
+
+.intro-text {
+  font-size: 1.75rem;
+  font-family: var(--font-serif);
+  max-width: 40ch;
+}
+
+a {
+  text-decoration-color: var(--color-accent-dk);
+}
+
+a:hover {
+  text-decoration-color: var(--color-text-dk-primary);
 }
